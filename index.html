@@ -1,18 +1,173 @@
+<!DOCTYPE html>
 <html>
-  <script>
-    service cloud.firestore {
-      match /databases/{database}/documents {
-        match /{document=**} {
-          allow read, write: if false;
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+      <script>
+        service cloud.firestore {
+          match /databases/{database}/documents {
+            match /{document=**} {
+              allow read, write: if false;
+            }
+          }
         }
-      }
-    }
 
   </script>
-  <head>
-    <title>oepeman</title>
-    <br>
-  <h1>Dit is de site van de enige echte oepeman</h1>
-  <p>hey</p>
-  </head>
+    <head>
+      <!-- <div class="navbar"> -->
+        <!-- <a class="active" href="#"><i class="home"></i> Home</a>
+        <a href="#"><i class="Over-ons"></i> Over ons</a>
+        <a href="contact.html"><i class="contact"></i> Contact</a>
+        <a href="#"><i class="login"></i> Login</a> -->
+
+
+
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="index.html">Den Hollandsche</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href=index.html>Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="diensten.html">Diensten</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="overOns.html">Over ons</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="producten.html">producten</a>
+              </li>
+              <li class="nav-item">
+                <a href="https://www.kiyoh.nl/den_hollandsche/">
+                <img src="images/4.5.png" style="width: 140px; height: 40px;">
+              </a>
+              </li>
+            </ul>
+            <span class="navbar-text">
+              Email: <a href="mailto:gijsvanas20@gmail.com">gijsvanas20@gmail.com</a>
+            </span>
+          </div>
+        </nav>
+
+    </head>
+
+      <br><br>
+
+        <body>
+
+          <!-- plaatjes -->
+          <!-- <div class="plaatjes">
+            <div class="carousel slide carousel-fade" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="images/vierdewide.jpg" alt="bos 1">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="display-4">Title</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="images/anderewide.jpg" alt="bos 2">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="display-4">Title</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="images/derdewide.png" alt="lake">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="display-4">Title</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+
+            <div class="jumbotron container">
+              <!-- <div class="container"> -->
+                <div class="row">
+                  <div class="col">
+                    <br><br><br><br><br>
+                    <h1 class="display-4">
+                      	Titel
+                      </h1>
+                      <p class="lead">
+                        hier komt de beschrijving te staan van de locatie en alles wat met contact te maken heeft
+                      </p>
+                    </div>
+                    <div class="col">
+                      <img id="ik" class="img-responsive" src="images/Gijs.jpg">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+          </body>
+          
+          <br><hr><br>
+
+          <footer class="page-footer font-small blue-grey lighten-5">
+                <div class="container">
+
+                </div>
+              <div class="container text-center text-md-left mt-5">
+                <div class="row mt-3 dark-grey-text">
+                  <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+                    <h6 class="text-uppercase font-weight-bold">Info</h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>Hier zet je text zodat het er leuk en netjes klinkt over wat je doet.</p>
+                  </div>
+
+                  <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                    <h6 class="text-uppercase font-weight-bold">Diensten</h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                      <a class="dark-grey-text" href="#!">Optie 1</a>
+                    </p>
+                    <p>
+                      <a class="dark-grey-text" href="#!">Optie 2</a>
+                    </p>
+                    <p>
+                      <a class="dark-grey-text" href="#!">Optie 3</a>
+                    </p>
+                    <p>
+                      <a class="dark-grey-text" href="diensten.html">alle opties</a>
+                    </p>
+
+                  </div>
+
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                      <h6 class="text-uppercase font-weight-bold">Contact</h6>
+                        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                        <p>
+                          <i class="mr-3"></i>Pascalweg 3, 6662 NX Elst</p>
+                        <p>
+                          <i class="mr-3"></i> Email@gmail.com</p>
+                        <p>
+                          <i class="mr-3"></i>  0481 371 333</p>
+                        <p>
+                          <i class="mr-3"></i>  0481 371 333</p>
+                      </div>
+                    </div>
+                  </div>
+
+                    <div class="footer-copyright text-center text-black-50 py-3">© 2018 Copyright:
+                      <a class="dark-grey-text" href="http://gijsvanas.nl/"> gijsvanas.nl</a>
+                    </div>
+
+            </footer>
+
 </html>
